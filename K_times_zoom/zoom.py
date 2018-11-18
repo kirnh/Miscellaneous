@@ -14,7 +14,7 @@ def zoom(image, pivot_point, scale):
     # Calculating the width and height of the portion of the image retained after scaling
     retained_height, retained_width = img_height/scale, img_width/scale
     # Calculating the position of the pixels of the retained portion after selecting the pivot point
-    pivot_y, pivot_x = pivot_point[0], pivot_point[1]
+    pivot_x, pivot_y = pivot_point[0], pivot_point[1]
     x_high = int(pivot_x + (retained_width / 2))
     x_low = int(pivot_x - (retained_width / 2))
     y_high = int(pivot_y + (retained_height / 2))
